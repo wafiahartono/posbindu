@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".form.FormFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_section_title"
+        style="?textAppearanceSubtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_m"
+        android:layout_marginEnd="@dimen/margin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="@dimen/max_width"
+        tools:text="Section title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_question_number"
+        style="?textAppearanceOverline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_xs"
+        android:layout_marginEnd="@dimen/margin"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:textColorTertiary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_section_title"
+        app:layout_constraintWidth_max="@dimen/max_width"
+        tools:text="Pertanyaan 1 dari 10" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_question_text"
+        style="?textAppearanceHeadline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_m"
+        android:layout_marginEnd="@dimen/margin"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/frame_layout_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_question_number"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_max="@dimen/max_width"
+        tools:text="Question text" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_m"
+        android:layout_marginEnd="@dimen/margin_m"
+        android:layout_marginBottom="@dimen/margin_m"
+        app:layout_constraintBottom_toTopOf="@id/button_previous_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_question_text"
+        app:layout_constraintWidth_max="@dimen/max_width">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_multiple_choice_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/multiple_choice_question_choice_card"
+            tools:visibility="gone" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_short_answer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/answer"
+            android:visibility="gone"
+            app:helperTextEnabled="true"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_short_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_previous_question"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:text="@string/previous"
+        android:textAllCaps="false"
+        android:textColor="?android:textColorTertiary"
+        app:icon="@drawable/ic_round_chevron_left_24"
+        app:iconGravity="textStart"
+        app:iconTint="?android:textColorTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/frame_layout_answer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_next_question"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_round_chevron_right_24"
+        app:iconGravity="textEnd"
+        app:layout_constraintBottom_toBottomOf="@id/button_previous_question"
+        app:layout_constraintEnd_toEndOf="@id/frame_layout_answer"
+        app:layout_constraintTop_toTopOf="@id/button_previous_question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1074644360403",
+    "project_id": "posbindu-fb251",
+    "storage_bucket": "posbindu-fb251.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074644360403:android:d443fc534dbc3fddbe8826",
+        "android_client_info": {
+          "package_name": "id.ac.uns.posbindu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074644360403-cm6tltl9jng3kag5jmmupfd1056m09s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT3EDWUmr4cuP_-CIK6pYg18gYyUZjjdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074644360403-cm6tltl9jng3kag5jmmupfd1056m09s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

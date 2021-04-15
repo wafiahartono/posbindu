@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/form_card_size"
+    android:layout_height="@dimen/form_card_size"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/form_card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin"
+            android:contentDescription="@string/illustration"
+            android:padding="@dimen/margin_m"
+            tools:src="@drawable/illustration_medicine" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_title"
+            style="?textAppearanceCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginStart="@dimen/margin_m"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginBottom="@dimen/margin_m"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            tools:text="Title" />
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

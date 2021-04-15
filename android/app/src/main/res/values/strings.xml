@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Posbindu</string>
+    <string name="update_link">https://drive.google.com/file/d/1SLXJAK1MCGRQndwXWoB1bAD1ctvg47Yd/view?usp=sharing</string>
+    <string name="crash_msg">Terjadi kesalahan. Coba beberapa saat lagi</string>
+    <string name="crash_report_activity_picker_title">Kirim laporan kesalahan aplikasi Posbindu</string>
+    <string name="crash_report_email_subject">Laporan kesalahan aplikasi Posbindu</string>
+    <string-array name="crash_report_recipients">
+        <item>wafiazmi.ahartono@gmail.com</item>
+    </string-array>
+    <string name="field_required_msg">Kolom ini wajib diisi</string>
+    <string name="home">Beranda</string>
+    <string name="report">Laporan</string>
+    <string name="profile">Profil</string>
+    <string name="update_dialog_title">Update tersedia</string>
+    <string name="update_dialog_msg">Terdapat versi aplikasi Posbindu yang lebih baru. Perbarui aplikasi untuk terus menggunakan aplikasi</string>
+    <string name="update">Perbarui</string>
+    <string name="later">Nanti</string>
+    <string name="fragment_sign_in_subtitle">Masuk dengan akun Posbindumu</string>
+    <string name="fragment_sign_in_reset_password_txt">Lupa password?</string>
+    <string name="fragment_sign_in_sign_up_txt">Belum punya akun? Daftar</string>
+    <string name="invalid_email_or_password_msg">Email atau password salah</string>
+    <string name="email_not_valid_msg">Email tidak valid</string>
+    <string name="email_collision_msg">Email sudah terdaftar</string>
+    <string name="user_agreement_required_msg">Kamu harus menyetujui ketentuan dan kebijakan data Posbindu untuk menggunakan aplikasi ini</string>
+    <string name="select_birth_date">Pilih tanggal lahir</string>
+    <string name="nin_not_valid_msg">NIK tidak valid</string>
+    <string name="weak_password_msg">Kata sandi minimal 8 karakter</string>
+    <string name="password_confirm_not_match_msg">Kata sandi tidak sama</string>
+    <string name="email_not_registered_msg">Email tidak terdaftar</string>
+    <string name="user_agreement_checkbox_txt">Dengan mendaftar, saya menyetujui <a href="https://posbindu.id/">ketentuan dan kebijakan data</a> Posbindu</string>
+    <string name="fragment_sign_up_subtitle">Daftarkan akun Posbindumu</string>
+    <string name="fragment_sign_up_sign_in_txt">Sudah punya akun? Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Ulangi password</string>
+    <string name="phone_or_email">Ponsel atau email</string>
+    <string name="sign_in">Masuk</string>
+    <string name="sign_up">Daftar</string>
+    <string name="nin_tc">Nomor Induk Kependudukan</string>
+    <string name="fragment_email_verification_title">Verifikasi emailmu</string>
+    <string name="fragment_email_verification_subtitle">Lakukan verifikasi melalui link yang dikirim ke emailmu</string>
+    <string name="fragment_email_verification_sign_in_txt">Sudah terverifikasi? Masuk</string>
+    <string name="send_verification_email">Kirim email verifikasi</string>
+    <string name="full_name">Nama lengkap</string>
+    <string name="sex">Jenis kelamin</string>
+    <string name="birthplace">Tempat lahir</string>
+    <string name="birthdate">Tanggal lahir</string>
+    <string name="marital_status">Status pernikahan</string>
+    <string name="full_address">Alamat lengkap</string>
+    <string name="recent_education_level">Tingkat pendidikan terakhir</string>
+    <string name="monthly_salary">Pendapatan tiap bulan</string>
+    <string name="save">Simpan</string>
+    <string name="reset_password">Reset password</string>
+    <string name="fragment_password_reset_subtitle">Reset password akunmu melalui link yang dikirim ke emailmu</string>
+    <string name="send_password_reset_email">Kirim email reset password</string>
+    <string name="rgdc_logo">Logo Research Group Disease Control</string>
+    <string name="uns_logo">Logo Universitas Sebelas Maret</string>
+    <string name="kemenkes_logo">Logo Kementerian Kesehatan</string>
+    <string name="illustration">Ilustrasi</string>
+    <string name="email_not_verified_msg">Email belum diverifikasi</string>
+    <string name="verification_email_sent_msg">Email verifikasi telah dikirim</string>
+    <string name="password_reset_email_sent_msg">Email reset password telah dikirim</string>
+    <string name="sign_out">Keluar</string>
+    <string name="birthplace_birthdate">Tempat, tanggal lahir</string>
+    <string name="birthplace_birthdate_txt">%1$s, %2$s</string>
+    <string name="cancel">Batal</string>
+    <string name="sign_out_confirm_msg">Apakah kamu yakin ingin keluar?</string>
+    <string name="greeting_morning_txt">Selamat pagi, %1$s!</string>
+    <string name="greeting_noon_txt">Selamat siang, %1$s!</string>
+    <string name="greeting_afternoon_txt">Selamat sore, %1$s!</string>
+    <string name="greeting_evening_txt">Selamat malam, %1$s!</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="next">Selanjutnya</string>
+    <string name="yes">Ya</string>
+    <string name="question_number_txt">Pertanyaan %1$d dari %2$d</string>
+    <string name="fragment_question_exit_confirm_msg">Apakah kamu yakin kamu ingin kembali? Jawabanmu tidak akan disimpan</string>
+    <string name="question_not_answered_msg">Jawab semua pertanyaan</string>
+    <string name="answer">Jawaban</string>
+    <string name="fragment_phone_verification_title">Verifikasi nomor ponselmu</string>
+    <string name="fragment_phone_verification_subtitle">Masukkan kode verifikasi yang dikirim ke nomor %1$s</string>
+    <string name="send_verification_code">Kirim kode verifikasi</string>
+    <string name="send_verification_code_timer">Kirim kode verifikasi (%1$d detik)</string>
+    <string name="report_crash_button_txt">Laporkan kesalahan</string>
+    <string name="verification_code_sent_msg">Kode verifikasi telah dikirim</string>
+    <string name="invalid_phone_number_msg">Nomor ponsel tidak valid</string>
+    <string name="invalid_verification_code_msg">Kode verifikasi salah</string>
+    <string name="birthplace_input_layout_helper_txt">Kabupaten/kota</string>
+    <string name="loading_msg">Loading…</string>
+    <string-array name="sex">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="marital_status">
+        <item>Belum menikah</item>
+        <item>Menikah</item>
+        <item>Duda/Janda</item>
+    </string-array>
+    <string-array name="education_level">
+        <item>Tidak sekolah</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>Diploma</item>
+        <item>Sarjana</item>
+    </string-array>
+    <string-array name="monthly_salary_level">
+        <item>&lt; 1,5 juta</item>
+        <item>1,5 – 3 juta</item>
+        <item>3 – 5 juta</item>
+        <item>5 – 10 juta</item>
+        <item>> 10 juta</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_nin_subtitle">Masukkan NIK (nomor KTP) untuk melanjutkan</string>
+    <string name="nin">Nomor induk kependudukan</string>
+    <string name="create_profile_forbidden_msg">Kamu tidak diizinkan untuk menambahkan profil ini</string>
+</resources>

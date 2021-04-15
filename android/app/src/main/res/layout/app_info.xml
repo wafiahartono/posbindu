@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sponsor_logo_size"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/kemenkes_logo"
+        android:src="@drawable/logo_kemenkes" />
+
+    <ImageView
+        android:layout_width="@dimen/sponsor_logo_size"
+        android:layout_height="@dimen/sponsor_logo_size"
+        android:layout_marginStart="@dimen/margin_s"
+        android:contentDescription="@string/uns_logo"
+        android:src="@drawable/logo_uns" />
+
+    <ImageView
+        android:layout_width="@dimen/sponsor_logo_size"
+        android:layout_height="@dimen/sponsor_logo_size"
+        android:layout_marginStart="@dimen/margin_s"
+        android:contentDescription="@string/rgdc_logo"
+        android:src="@drawable/logo_rgdc" />
+
+</LinearLayout>

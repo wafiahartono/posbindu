@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_16_dp">16dp</dimen>
+    <dimen name="form_card_size">150dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="max_width">320dp</dimen>
+    <dimen name="margin">32dp</dimen>
+    <dimen name="margin_m">16dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="illustration_height">240dp</dimen>
+    <dimen name="photo_size">120dp</dimen>
+    <dimen name="sponsor_logo_size">40dp</dimen>
+    <dimen name="form_card_corner_radius">16dp</dimen>
+    <integer name="progress_indicator_min_hide_delay">300</integer>
+</resources>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_view_profile_picture"
+                android:layout_width="@dimen/photo_size"
+                android:layout_height="@dimen/photo_size"
+                android:layout_marginTop="@dimen/margin_m"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Photo"
+                app:srcCompat="@drawable/illustration_male_avatar" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_name"
+                style="?textAppearanceHeadline5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_view_profile_picture"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_national_identity_number"
+                style="?textAppearanceBody2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_name"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="National identity number" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_email_address"
+                style="?textAppearanceBody2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                android:textAlignment="center"
+                android:textColor="?android:textColorTertiary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_national_identity_number"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Email address" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_sign_out"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="@string/sign_out"
+                android:textAppearance="?textAppearanceCaption"
+                android:textColor="?android:textColorTertiary"
+                app:icon="@drawable/ic_round_exit_to_app_24"
+                app:iconGravity="end"
+                app:iconTint="?android:textColorTertiary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_email_address" />
+
+            <View
+                android:id="@+id/view_separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_s"
+                android:layout_marginEnd="@dimen/margin"
+                android:background="?android:listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_sign_out"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_sex_title"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/sex"
+                android:textColor="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_separator"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_sex"
+                style="?textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_sex_title"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Laki-laki" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_place_and_date_of_birth_title"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/birthplace_birthdate"
+                android:textColor="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_sex"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_place_and_date_of_birth"
+                style="?textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_place_and_date_of_birth_title"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Jombang, 25 September 1999" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_marital_status_title"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/marital_status"
+                android:textColor="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_place_and_date_of_birth"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_marital_status"
+                style="?textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_marital_status_title"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Belum menikah" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_address_title"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/full_address"
+                android:textColor="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_marital_status"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_address"
+                style="?textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_address_title"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Kelurahan Tambak Rejo, RT 002, RW 003, Kecamatan Jombang, Kabupaten Jombang, Provinsi Jawa Timur" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_recent_education_level_title"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/recent_education_level"
+                android:textColor="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_address"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_recent_education_level"
+                style="?textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/loading_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_recent_education_level_title"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="Diploma" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_monthly_salary_title"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/monthly_salary"
+                android:textColor="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_recent_education_level"
+                app:layout_constraintWidth_max="@dimen/max_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_monthly_salary"
+                style="?textAppearanceBody1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin_m"
+                android:text="@string/loading_msg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_monthly_salary_title"
+                app:layout_constraintWidth_max="@dimen/max_width"
+                tools:text="&lt; 1,5 juta" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
